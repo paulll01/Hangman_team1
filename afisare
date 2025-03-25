@@ -1,0 +1,12 @@
+# Florin
+
+#  returneaza _ _ _ a _ _ _
+def afiseaza_stare_cuvant(stare):
+    print("Cuvântul: " + ' '.join(stare))
+
+# de afisat spanzuratoarea
+def afiseaza_spanzuratoare(greseli):
+
+# de afisat setul
+def afiseaza_litere_incercate(litere_incercate):
+    print("Litere încercate:", ' '.join(litere))
