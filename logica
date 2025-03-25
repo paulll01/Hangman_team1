@@ -1,0 +1,10 @@
+# Ionut
+
+# trimitem cuvant si returnam o stare => stare  = ['_', '_', '_', '_', '_', '_']
+def initializeaza_stare_cuvant(cuvant):
+  
+# va returna noua stare stare  = ['a', '_', '_', '_', '_', '_']
+def actualizeaza_stare_cuvant(cuvant, stare, litera):
+
+# va returna noua stare stare  = ['a', '_', '_', '_', '_', '_']
+def este_cuvant_ghicit(stare):
