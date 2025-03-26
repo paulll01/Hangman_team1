@@ -14,7 +14,7 @@ def incarca_cuvinte():
 
 # trimitem lista de cuvinte si cu random returneaza un cuvant random
 def alege_cuvant(cuvinte):
-    return random.choice(cuvinte)
+    return random.choice(cuvinte).upper()
 
 # Cerem o litera de la tastatura
 def cere_litera(litere_incercate):
@@ -43,13 +43,13 @@ def cere_litera(litere_incercate):
         print("Litera a fost deja incercata!")
         return cere_litera(litere_incercate)
     
-    litere_incercate.append(litera)
+    # litere_incercate.append(litera)
     # print(litere_incercate)
     return litera.upper()
 
 # Test
-print(alege_cuvant(incarca_cuvinte()))
-litere_incercate = ["A","E","I"] # lista
-print("Litere incercate(inainte):",litere_incercate)
-print(cere_litera(litere_incercate))
-print("Litere incercate(dupa):",litere_incercate)
+# print(alege_cuvant(incarca_cuvinte()))
+# # litere_incercate = ["A","E","I"] # lista
+# print("Litere incercate(inainte):",litere_incercate)
+# print(cere_litera(litere_incercate))
+# print("Litere incercate(dupa):",litere_incercate)
