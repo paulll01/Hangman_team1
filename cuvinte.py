@@ -1,14 +1,16 @@
 # Daniel
 
 import random
-# aici incarcam o lista de c=uvinte din fisier din .txt -> Majuscule/fara diacritice
+# aici incarcam o lista de cuvinte din fisier din .txt -> Majuscule/fara diacritice
 def incarca_cuvinte():
-    cuvinte = ["casă","masă","telefon","floare","pădure","copil","caiet","calculator","mere",
-    "chitară","portocală","creion","joc","coleg","fereastră","pahar","prieten","examen","bunic",
-    "carte","drum","lac","munte","teatru","tren","cântec","umbră","călătorie","lacrimă","răsărit",
-    "sat","mâncare","bucurie","amintire","căldură","lumină","ploaie","zâmbet","câine","pisică",
-    "păsăre","pește","vultur","leu","tigru","urs","elefant","zebră","girafă","cangur","vulpe","lup"]
+    # cuvinte = []
+    try:
+        with open("hangman_cuvinte.txt", "r", encoding="utf-8") as f:
+            cuvinte = [linie.strip() for linie in f if linie.strip()]
+    except FileNotFoundError:
+        print("Fișierul 'hangman_cuvinte.txt' nu a fost găsit.")
     return cuvinte
+
 # pentru functionalitate am definit mai intai hard-coded lista de cuvinte
 # si pentru a primi o revizie a fisierului :) 
 
