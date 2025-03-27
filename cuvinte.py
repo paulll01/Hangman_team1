@@ -3,10 +3,11 @@
 import random
 # aici incarcam o lista de cuvinte din fisier din .txt -> Majuscule/fara diacritice
 def incarca_cuvinte():
-    # cuvinte = []
+    cuvinte = []
     try:
         with open("hangman_cuvinte.txt", "r", encoding="utf-8") as f:
-            cuvinte = [linie.strip() for linie in f if linie.strip()]
+            continut = f.read()
+            cuvinte = [c.strip() for c in continut.split(",") if c.strip()]
     except FileNotFoundError:
         print("Fișierul 'hangman_cuvinte.txt' nu a fost găsit.")
     return cuvinte
